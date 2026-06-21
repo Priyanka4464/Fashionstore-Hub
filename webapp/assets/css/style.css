@@ -1,0 +1,92 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* FOOTER */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #081c15;
+}
+
+/* PRODUCTS SECTION */
+.products-section .section-header {
+    display: block;
+    margin-bottom: 0;
+}
+
+.products-section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+/* VIEW ALL CARD */
+.view-all-card {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ede9fe !important;
+    border: 2px dashed #a78bfa !important;
+    min-height: 300px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.view-all-card:hover {
+    background: #ddd6fe !important;
+    transform: translateY(-3px);
+}
+
+.view-all-card a {
+    text-decoration: none;
+    color: #5b21b6;
+}
+
+.view-all-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b21b6;
+}
+
+.view-all-arrow {
+    font-size: 48px;
+    color: #5b21b6;
+    display: block;
+}
