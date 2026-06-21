@@ -157,6 +157,5 @@ Priyanka K
 
 * Java Full Stack Developer
 * Computer Science Engineering Graduate
-* GitHub: https://github.com/your-github-username
-* LinkedIn: https://linkedin.com/in/your-linkedin-profile
+
 
