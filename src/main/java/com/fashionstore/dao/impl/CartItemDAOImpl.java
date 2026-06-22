@@ -30,7 +30,7 @@ public class CartItemDAOImpl implements CartItemDAO {
             ps.setInt(2, item.getProductId());
             ps.setString(3, item.getSizeLabel());
             ps.setInt(4, item.getQuantity());
-            ps.setDouble(5, item.getUnitPrice());
+            ps.setDouble(5, item.getPrice());
 
             int rows = ps.executeUpdate();
             status = rows > 0;
@@ -60,7 +60,7 @@ public class CartItemDAOImpl implements CartItemDAO {
                 item.setProductId(rs.getInt("product_id"));
                 item.setSizeLabel(rs.getString("size_label"));
                 item.setQuantity(rs.getInt("quantity"));
-                item.setUnitPrice(rs.getDouble("unit_price"));
+                item.setPrice(rs.getDouble("unit_price"));
                 item.setAddedAt(rs.getTimestamp("added_at"));
 
                 list.add(item);
@@ -153,7 +153,7 @@ public class CartItemDAOImpl implements CartItemDAO {
                 item.setProductId(rs.getInt("product_id"));
                 item.setSizeLabel(rs.getString("size_label"));
                 item.setQuantity(rs.getInt("quantity"));
-                item.setUnitPrice(rs.getDouble("unit_price"));
+                item.setPrice(rs.getDouble("unit_price"));
                 item.setAddedAt(rs.getTimestamp("added_at"));
             }
 

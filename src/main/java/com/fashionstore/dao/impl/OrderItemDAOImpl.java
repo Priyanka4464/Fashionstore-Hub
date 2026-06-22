@@ -30,7 +30,7 @@ public class OrderItemDAOImpl implements OrderItemDAO {
             ps.setInt(2, item.getProductId());
             ps.setString(3, item.getProductName());
             ps.setInt(4, item.getQuantity());
-            ps.setDouble(5, item.getUnitPrice());
+            ps.setDouble(5, item.getPrice());
             ps.setDouble(6, item.getSubtotal());
             ps.setString(7, item.getSizeLabel());
 
@@ -62,7 +62,7 @@ public class OrderItemDAOImpl implements OrderItemDAO {
                 item.setProductId(rs.getInt("product_id"));
                 item.setProductName(rs.getString("product_name"));
                 item.setQuantity(rs.getInt("quantity"));
-                item.setUnitPrice(rs.getDouble("unit_price"));
+                item.setPrice(rs.getDouble("unit_price"));
                 item.setSubtotal(rs.getDouble("subtotal"));
                 item.setSizeLabel(rs.getString("size_label"));
 

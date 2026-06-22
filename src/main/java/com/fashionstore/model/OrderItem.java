@@ -10,11 +10,15 @@ public class OrderItem {
     private double price;
     private double discountPercent;
     private double subtotal;
+    private String sizeLabel;
 
     // Constructors
     public OrderItem() {}
 
     // Getters and Setters
+    public String getSizeLabel() { return sizeLabel; }
+    public void setSizeLabel(String sizeLabel) { this.sizeLabel = sizeLabel; }
+
     public int getOrderItemId() { return orderItemId; }
     public void setOrderItemId(int orderItemId) { this.orderItemId = orderItemId; }
 

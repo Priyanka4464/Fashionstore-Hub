@@ -11,6 +11,7 @@ public class CartItem {
     private int quantity;
     private String imageUrl;
     private String sizeLabel;
+    private java.sql.Timestamp addedAt;
 
     public double getDiscountedPrice() {
         return price - (price * discountPercent / 100);
@@ -23,6 +24,9 @@ public class CartItem {
     public CartItem() {}
 
     // Getters & Setters
+    public java.sql.Timestamp getAddedAt() { return addedAt; }
+    public void setAddedAt(java.sql.Timestamp addedAt) { this.addedAt = addedAt; }
+
     public int getCartItemId() { return cartItemId; }
     public void setCartItemId(int cartItemId) { this.cartItemId = cartItemId; }
 
